@@ -82,7 +82,7 @@ tqs-2026/
 │   └── CODEOWNERS                  # quem revisa o quê
 ├── capitulos/                      # este livro didático
 ├── src/
-│   ├── validators.py               # FONTE CANÔNICA da lógica de validação
+│   ├── validators.py               # VERSÃO PRINCIPAL da lógica de validação
 │   ├── app.py                      # rotas Flask
 │   └── templates/index.html        # formulário renderizado pelo Flask
 ├── tests/

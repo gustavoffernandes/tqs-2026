@@ -1,5 +1,5 @@
 // Porte JavaScript dos validadores em src/validators.py.
-// A fonte canônica é o Python — esta versão existe apenas para
+// A versão principal é o Python — este arquivo existe apenas para
 // permitir um demo interativo no GitHub Pages (que só hospeda
 // conteúdo estático). Qualquer mudança de regra deve ser feita
 // primeiro no Python (com testes), e depois replicada aqui.

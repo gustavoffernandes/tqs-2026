@@ -66,7 +66,7 @@ tqs-2026/
 │   └── CODEOWNERS                  # quem revisa o quê
 ├── capitulos/                      # 📖 ESTE LIVRO (11 capítulos)
 ├── src/
-│   ├── validators.py               # ⭐ FONTE CANÔNICA da lógica
+│   ├── validators.py               # ⭐ VERSÃO PRINCIPAL da lógica
 │   ├── app.py                      # rotas Flask
 │   └── templates/index.html        # formulário (Flask)
 ├── tests/

@@ -20,7 +20,7 @@ A mesma regra de negócio vive em **dois arquivos**, em duas linguagens:
 
 | Lugar | Para que serve | Onde está |
 |---|---|---|
-| **Python** (canônico) | Implementação testada com pytest. **Toda mudança começa aqui.** | [`src/validators.py`](../src/validators.py) |
+| **Python** (principal) | Implementação testada com pytest. **Toda mudança começa aqui.** | [`src/validators.py`](../src/validators.py) |
 | **JavaScript** (espelho) | Permite o demo interativo no GitHub Pages (que só hospeda arquivos estáticos — Flask não roda lá). | [`docs/validators.js`](../docs/validators.js) |
 
 > **Lição didática**: a mesma regra de negócio pode ser implementada e testada em qualquer linguagem. O que importa é a **regra**, não o framework.
