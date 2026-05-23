@@ -4,7 +4,9 @@
 
 ---
 
-Com o ambiente preparado, vamos colocar a aplicação Flask no ar **localmente** para entender o que estamos testando. Este capítulo é prático e curto.
+Com o ambiente preparado, vamos colocar a aplicação Flask no ar para entender o que estamos testando. Este capítulo é prático e curto.
+
+> 🌐 **Está no Caminho A (navegador puro)?** Você **não vai rodar o Flask** — esse caminho não tem terminal. Pule direto para a [seção 3.4](#34-o-que-está-acontecendo-por-trás) (diagrama do fluxo) e depois acesse o **demo deployado no GitHub Pages** que tem o mesmo formulário (capítulo 8 ensina a ativar). Se quiser rodar localmente, troque para o **Caminho B (Codespaces)** ou C.
 
 ## 3.1. Instalar as dependências
 

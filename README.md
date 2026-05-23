@@ -31,10 +31,20 @@ A ideia é que você **leia e execute cada capítulo em ordem**, terminando com 
 
 ---
 
-## ⚡ Quick start (para quem já leu o livro e quer só rodar)
+## ⚡ Quick start
+
+Você tem **três caminhos** para acompanhar este livro (detalhes no [capítulo 2](capitulos/02-preparando-ambiente.md#21-três-caminhos-possíveis)):
+
+| Caminho | Como | Para quem |
+|---|---|---|
+| **A** — Navegador puro | Edite tudo em [github.com](https://github.com) (aperta `.` para abrir VS Code web) | Sem instalar nada, qualquer SO |
+| **B** — GitHub Codespaces ⭐ | Botão **Code → Codespaces → Create codespace** no repo | **Recomendado para a aula** — zero instalação local, ambiente completo |
+| **C** — Instalação local | Comandos abaixo | Mais rápido para iterar, funciona offline |
+
+### Caminho C — local (Linux/Mac)
 
 ```bash
-git clone https://github.com/<seu-usuario>/tqs-2026.git
+git clone https://github.com/SEU-USUARIO/tqs-2026.git
 cd tqs-2026
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements-dev.txt
@@ -43,7 +53,9 @@ pytest                              # 6 testes, 82% cobertura
 flask --app src.app run             # http://localhost:5000
 ```
 
-Verificações que o CI roda (faça isso antes de cada commit):
+No **Windows**, troque a linha do venv por `python -m venv .venv && .venv\Scripts\activate`.
+
+### Verificações que o CI roda (antes de cada commit)
 
 ```bash
 ruff check . && ruff format --check .
@@ -57,6 +69,8 @@ pytest --cov=src --cov-fail-under=80
 
 ```
 tqs-2026/
+├── .devcontainer/
+│   └── devcontainer.json           # config GitHub Codespaces (Caminho B)
 ├── .github/
 │   ├── workflows/
 │   │   ├── ci.yml                  # lint + testes + cobertura
